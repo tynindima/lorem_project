@@ -1,0 +1,35 @@
+@import "../mixins/customs";
+
+.top-menu {
+  height: 40px;
+  color: $top-menu-color;
+
+  &__icon {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__sign-in {
+    margin-left: 6px;
+    margin-right: 31px;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      
+      @include vertical-line;
+    }
+  }
+
+  &__language {
+    margin-left: 8px;
+    margin-right: 15px;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+
+      @include arrow-bottom($top-menu-color);
+    }
+  }
+}

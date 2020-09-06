@@ -1,0 +1,113 @@
+@import "top-menu";
+
+@import "main-menu";
+
+@import "title";
+
+@import "../mixins/media";
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+
+  &__top {
+    background-color: $bg-header-top;
+  }
+
+  &__main {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+  }
+
+  &__title {
+    height: 800px;
+    background-image: url("../../img/header_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@include media-tablet {
+  .header {
+    &__top {
+      background-color: $bg-header-top-mobile;
+    }
+
+    &__icons-box {
+      display: none;
+    }
+
+    &__main {
+      background-color: $bg-header-main-mobile;
+    }
+  }
+
+  .top-menu {
+    &__sign-in {
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .main-menu {
+    &__icon {
+      &_shop {
+        &::after {
+          content: "7";
+          position: absolute;
+          bottom: 14px;
+          left: 18px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: $header-hover-color;
+          text-align: center;
+          line-height: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@include media-tablet-horizontal {
+  .main-menu {
+    &__item {
+      &:hover::before {
+        display: none;
+      }
+    }
+
+    &__link {
+      &::after {
+        display: none;
+      }
+    }
+
+    &__button {
+      display: block;
+    }
+
+    &__icon {
+      &_search {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media-laptop {
+  .main-menu {
+    &__icon {
+      &_heart {
+        display: none;
+      }
+    }
+  }
+}

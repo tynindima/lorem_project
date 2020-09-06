@@ -1,0 +1,24 @@
+@import "../utils/variables";
+
+@mixin arrow-bottom($color) {
+  content: "";
+  position: absolute;
+  right: -13px;
+  top: 30%;
+  width: 8px;
+  height: 8px;
+  border: solid $color;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+@mixin vertical-line {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: $top-menu-color;
+}

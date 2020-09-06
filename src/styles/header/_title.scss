@@ -1,0 +1,46 @@
+.title {
+  color: $white-color;
+
+  &__slide {
+    height: 800px;
+  }
+
+  &__caption {
+    width: 1077px;
+    margin-top: 287px;
+
+    &_txt {
+      margin-bottom: 25px;
+      font-size: 28px;
+      letter-spacing: 1.4px;
+      line-height: 27px;
+      text-transform: uppercase;
+    }
+
+    &_head {
+      margin-top: 0;
+      margin-bottom: 35px;
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 2.1px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    width: 170px;
+    height: 45px;
+    background-color: $bg-header-top-mobile;
+    padding: 0;
+    box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+    border-width: 0;
+    border-radius: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: $white-color;
+
+    &:hover {
+      color: $top-menu-color;
+    }
+  }
+}
