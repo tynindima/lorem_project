@@ -51,6 +51,7 @@
     }
 
     &::after {
+
       @include arrow-bottom($white-color);
 
       right: -10px;
@@ -80,6 +81,7 @@
       background-position: center;
 
       &::after {
+
         @include vertical-line;
       }
     }
@@ -89,6 +91,7 @@
       background-position: center;
 
       &::after {
+        
         @include vertical-line;
       }
     }
