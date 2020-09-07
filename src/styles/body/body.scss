@@ -3,6 +3,7 @@
 
 .body {
   position: relative;
+  font-family: "Montserrat", sans-serif;
   background-color: $bg-body-color;
   padding-top: 91px;
 
@@ -33,6 +34,50 @@
 @include media-tablet {
   .body {
     margin-top: 69.43px;
+  }
+}
+
+@include media-tablet-horizontal {
+  .sort-bd {
+    &__nav {
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    &__name {
+      margin-left: 16px;
+      font-weight: 400;
+      text-transform: none;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__item {
+      border-radius: 0;
+      padding: 14px 16px;
+      margin: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    &__item.active {
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background-color: #e3e3e3;
+    }
+
+    &__item.active .sort-bd__link {
+      color: $black-color !important;
+    }
+
+    &__link {
+      text-transform: none;
+    }
+
+    &__btn {
+      display: inline-block;
+    }
   }
 }
 
