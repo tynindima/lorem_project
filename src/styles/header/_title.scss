@@ -1,3 +1,5 @@
+@import "autor";
+
 .title {
   color: $white-color;
 
@@ -42,5 +44,20 @@
     &:hover {
       color: $top-menu-color;
     }
+  }
+
+  &__autor {
+    margin-top: 80px;
+  }
+
+  &__responses {
+    width: 235px;
+    margin-top: 34px;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  &__controls {
+    width: 3%;
   }
 }

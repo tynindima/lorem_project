@@ -1,6 +1,6 @@
 $(document).ready(() => {
   $(`#header-btn-menu`).on(`click`, () => {
-    $(`#navbarNav`).collapse(`toggle`);
+    $(`#header-navbarNav`).collapse(`toggle`);
   });
 
   // eslint-disable-next-line no-console

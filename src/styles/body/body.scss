@@ -1,3 +1,49 @@
-main {
-  background-color: white;
+@import "../mixins/media";
+@import "sort-bd";
+
+.body {
+  position: relative;
+  background-color: $bg-body-color;
+  padding-top: 91px;
+
+  &__right-bg {
+    position: absolute;
+    top: 91px;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    background-color: $white-color;
+    z-index: 0;
+  }
+
+  &__sort {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__main-section {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@include media-tablet {
+  .body {
+    margin-top: 69.43px;
+  }
+}
+
+@include media-laptop {
+  .body {
+    &__right-bg {
+      display: none;
+    }
+
+    &__sidebar {
+      display: none;
+    }
+  }
 }

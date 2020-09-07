@@ -19,6 +19,7 @@
     top: 40px;
     left: 0;
     right: 0;
+    z-index: 2;
   }
 
   &__title {
@@ -27,6 +28,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
   }
 }
 
@@ -43,6 +45,12 @@
     &__main {
       background-color: $bg-header-main-mobile;
     }
+
+
+    &__title {
+      display: none;
+    }
+
   }
 
   .top-menu {
@@ -103,11 +111,40 @@
 }
 
 @include media-laptop {
+  .header {
+    &__title {
+      height: 700px;
+    }
+  }
   .main-menu {
     &__icon {
       &_heart {
         display: none;
       }
+    }
+  }
+
+  .title {
+    &__slide {
+      height: 700px;
+    }
+
+    &__caption {
+      &_txt {
+        font-size: 22px;
+      }
+
+      &_head {
+        font-size: 32px;
+      }
+    }
+
+    &__autor {
+      display: none;
+    }
+
+    &__responses {
+      display: none;
     }
   }
 }
