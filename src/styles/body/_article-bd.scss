@@ -1,5 +1,9 @@
 .article-bd {
   max-width: 820px;
+
+  &__sm-ctr {
+
+  }
 }
 
 .article-bd-large {
@@ -17,7 +21,7 @@
   }
 }
 
-.article-bd-md {
+.article-bd-hr {
   border-radius: 4px;
   border-width: 0;
 
@@ -28,6 +32,27 @@
 
   &__title {
     font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+}
+
+.article-bd-sm {
+  border-radius: 4px;
+  border-width: 0;
+
+  &__body {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 14px;
     font-weight: bold;
   }
 

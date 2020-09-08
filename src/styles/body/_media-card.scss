@@ -1,8 +1,7 @@
 .media-card {
   position: relative;
   border-top: 1px solid #e8e8e8;
-  padding: 20px 0;
-  margin: 0 20px;
+  padding: 20px 20px;
 
   &__title {
     opacity: 0.87;
@@ -19,7 +18,7 @@
   &__more-vert {
     position: absolute;
     top: calc(50% - 8px);
-    right: 1px;
+    right: 21px;
     width: 4px;
     height: 16px;
   }

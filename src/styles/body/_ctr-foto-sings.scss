@@ -1,3 +1,16 @@
+@mixin arrow-mode {
+  position: absolute;
+  top: calc(50% - 18px);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-color;
+  color: $bg-header-main-mobile;
+  cursor: pointer;
+}
+
 .ctr-foto-signs {
   position: relative;
 
@@ -18,6 +31,18 @@
     width: 50px;
     height: 50px;
     background-image: url("../../img/play-sign-large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__play-sign-sm {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background-image: url("../../img/play_sign-sm.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,5 +90,16 @@
       height: 14px;
       background-image: url("../../img/comment-sign.png");
     }
+  }
+
+  &__left-arrow {
+    @include arrow-mode;
+    left: 10px;
+  }
+
+  &__right-arrow {
+    @include arrow-mode;
+    right: 10px;
+    transform: rotate(0.5turn);
   }
 }
