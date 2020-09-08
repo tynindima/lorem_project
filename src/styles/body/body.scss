@@ -2,6 +2,18 @@
 
 @import "sort-bd";
 
+@import "sidebar-bd";
+
+@import "article-bd";
+
+@import "social-icons";
+
+@import "post-sb";
+
+@import "media-card";
+
+@import "ctr-foto-sings";
+
 .body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -29,6 +41,10 @@
   &__main-section {
     position: relative;
     z-index: 1;
+  }
+
+  &__article {
+
   }
 }
 

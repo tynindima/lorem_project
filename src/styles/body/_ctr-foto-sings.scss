@@ -1,0 +1,69 @@
+.ctr-foto-signs {
+  position: relative;
+
+  &__left-sign {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 0.8px;
+    color: $white-color;
+  }
+
+  &__play-sign {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    background-image: url("../../img/play-sign-large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__heart-sign {
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+    width: 33px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    color: $white-color;
+    text-align: right;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 14px;
+      background-image: url("../../img/heart-like.png");
+    }
+  }
+
+  &__comment-sign {
+    position: absolute;
+    bottom: 18px;
+    right: 74px;
+    width: 29px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    color: $white-color;
+    text-align: right;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background-image: url("../../img/comment-sign.png");
+    }
+  }
+}

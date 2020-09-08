@@ -1,0 +1,41 @@
+.post-sb {
+  height: 87px;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  margin-bottom: 15px;
+
+  &__body {
+    position: relative;
+    padding: 0 14px;
+    width: 140px;
+    font-family: "Open Sans";
+    font-size: 12px;
+  }
+
+  &__data {
+    opacity: 0.87;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__msg {
+    position: absolute;
+    top: -3px;
+    right: -8px;
+    width: 31px;
+    height: 13px;
+    font-size: 14px;
+    text-align: right;
+    color: #2962ff;
+    background-image: url("../../img/aside-post-icon.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+.post-sb:last-child {
+  border-width: 0;
+}

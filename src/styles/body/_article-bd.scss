@@ -1,0 +1,44 @@
+.article-bd {
+  max-width: 820px;
+}
+
+.article-bd-large {
+  border-radius: 4px;
+  border-width: 0;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.64px;
+  }
+}
+
+.article-bd-md {
+  border-radius: 4px;
+  border-width: 0;
+
+  &__body {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+}
+
+.padding-t-b-10 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}

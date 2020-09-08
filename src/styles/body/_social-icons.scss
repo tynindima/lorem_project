@@ -1,0 +1,44 @@
+.social-icons {
+  display: flex;
+  &__item {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__icon {
+    color: $white-color;;
+  }
+
+  &__item:nth-child(1) {
+    background-color: #3b5999;
+  }
+
+  &__item:nth-child(2) {
+    background-color: #55acee;
+  }
+
+  &__item:nth-child(3) {
+    background-color: #4c75a3;
+  }
+
+  &__item:nth-child(4) {
+    background-color: #ff2e56;
+  }
+
+  &__item:nth-child(5) {
+    background-color: #34465d;
+  }
+
+  &__item:nth-child(6) {
+    background-color: #ea4c89;
+  }
+}
