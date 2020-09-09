@@ -43,9 +43,49 @@
     z-index: 1;
   }
 
-  &__article {
-
+  &__btns-nav {
+    max-width: 820px;
   }
+
+  &__btn-nav {
+    display: flex;
+
+    position: relative;
+    margin-top: 27px;
+    margin-bottom: 43px;
+    width: 93px;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+    letter-spacing: 0.8;
+    color: $bg-header-top-mobile;
+  }
+
+  &__btn-arrow {
+    position: relative;
+    display: block;
+    margin-left: 9px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $white-color;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 8px);
+      left: calc(50% - 8px);
+      height: 16px;
+      width: 16px;
+      background-image: url("../../img/arrow_forward.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
 }
 
 @include media-tablet {

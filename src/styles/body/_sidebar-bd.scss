@@ -62,6 +62,7 @@
   }
 
   &__subscribe-btn {
+    border-color: $bg-header-main-mobile;
     background-color: $bg-header-main-mobile;
     font-size: 16px;
     letter-spacing: 1.2px;
@@ -124,10 +125,6 @@
       background-color: $bg-header-main-mobile;
       border-color: $bg-header-main-mobile;
     }
-  }
-
-  &__tags {
-
   }
 }
 

@@ -1,3 +1,37 @@
+@import "../mixins/media";
+
+@import "subscribe";
+
+@import "top";
+
+@import "pages-tgl";
+
+@import "twitter-wig";
+
+@import "footer-form";
+
+@import "bottom-ft";
+
+@import "footer-table";
+
 .footer {
-  border: 1px solid red;
+
+}
+
+@include media-laptop {
+  .bottom-ft {
+    &__lang-box {
+      display: none;
+    }
+  }
+}
+
+@include media-tablet-horizontal {
+  .bottom-ft {
+    &__nav {
+      display: none;
+    }
+  }
+
+
 }

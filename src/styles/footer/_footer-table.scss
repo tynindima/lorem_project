@@ -1,0 +1,25 @@
+.footer-table {
+  font-family: "Open Sans";
+  color: $white-color;
+
+  &__name {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 38px;
+    letter-spacing: 0.56px;
+    padding: 0 !important;
+    opacity: 0.7;
+    border-color: #3c3c3c !important;
+  }
+
+  &__value {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: right;
+    padding: 0 !important;
+    color: $bg-tags-color;
+    opacity: 0.5;
+    border-color: #3c3c3c !important;
+  }
+}

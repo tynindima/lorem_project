@@ -1,0 +1,38 @@
+.pages-tgl {
+  background-color: $bg-footer-top;
+  color: $footer-border-color;
+  border-radius: 4px;
+  border-color: $footer-border-color;
+
+  &__header {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  &__button {
+    padding-left: 0;
+    color: $footer-border-color;
+    border: none;
+    outline: none;
+
+    &:hover {
+      color: $white-color;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: none;
+    background-color: $bg-footer-top;
+    cursor: pointer;
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+}

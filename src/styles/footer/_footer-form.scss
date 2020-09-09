@@ -1,0 +1,19 @@
+.footer-form {
+  &__text {
+    font-family: "Open Sans";
+    background-color: $bg-footer-top;
+    border-color: $footer-border-color;
+
+    &:focus {
+      background-color: $bg-footer-top;
+      box-shadow: none;
+    }
+  }
+
+  &__button {
+    border-color: $bg-header-main-mobile;
+    background-color: $bg-header-main-mobile;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+  }
+}
