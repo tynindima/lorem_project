@@ -77,7 +77,7 @@
     cursor: pointer;
 
     &_search {
-      background-image: url("../../img/search_ico.png") no-repeat;
+      background-image: url("../img/search_ico.png") no-repeat;
       background-position: center;
 
       &::after {
@@ -87,7 +87,7 @@
     }
 
     &_heart {
-      background-image: url("../../img/heart_ico.png") no-repeat;
+      background-image: url("../img/heart_ico.png") no-repeat;
       background-position: center;
 
       &::after {
@@ -96,7 +96,7 @@
     }
 
     &_shop {
-      background-image: url("../../img/shopping_cart.png") no-repeat;
+      background-image: url("../img/shopping_cart.png") no-repeat;
       background-position: center;
     }
   }
